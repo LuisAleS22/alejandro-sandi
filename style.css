@@ -168,3 +168,20 @@ header.sticky{
         left: 0;
     }
 }
+
+
+.links{
+    text-decoration: none;
+}
+
+.lists{
+    height: 300px;
+    box-shadow: 3px 3px 3px 3px  rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.1);
+    height: 295px;
+    width: 100%;
+}
