@@ -260,6 +260,7 @@ ul.tm-list-plus li:before {
   display: flex;
   align-items: center;
   justify-content: center;
+  background:rgb(9, 0, 49);
 }
 
 .tm-welcome-parallax {
