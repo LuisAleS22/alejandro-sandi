@@ -122,13 +122,18 @@ header.sticky{
     width: 30%;
 }
 
-.first .preview{
+.first div{
+    justify-content: center;
+}
+
+#preview img{
+    background-image: url(../../assets/Preview/base.png);
+}
+
+#preview{
     position: absolute;
-    top: 50%;
-    right: 50%;
     display: inline-block;
     margin-right: auto;
-    padding: 90px 70px;
     border: 2px black solid;
     border-radius: 5px;
 }

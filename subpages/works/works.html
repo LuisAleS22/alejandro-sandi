@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro Sandí</title>
-
     <link rel="stylesheet" href="works_style.css">
-    <script src="works_script.js"></script>
-    <script src="https://kit.fontawesome.com/d51307fecc.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -36,22 +33,30 @@
 
             <section class="estructura first">
                <h1>Practical work done in classes</h1>
-               <h2>Preview</h2>
-               <div class="preview">
-                        
-                </div>
+               <div>
+                <h2>Preview</h2>
+                <div id="preview">
+                    <img src="../../assets/Preview/base.png" id="img">
+                 </div>
+               </div>
+               
             </section>
 
             <section class="estructura second">
                 <ul>
-                    <li><a href="songs/songs.html">Songs</a></li>
-                    <li><a href="types/TiempoCompartido.htm">Types</a></li>
-                    <li><a href="os/Sistemas Operativos.htm">Operating Sistems</a></li>
-                    <li><a href="navbar/navbar.html">Navbar</a></li>
-                    <li><a href="proof/proof.html">Proof</a></li>
+                    <li ><a href="songs/songs.html"             onmouseover="setNewImage1()" onmouseout="setOldImage()">Songs</a></li>
+                    <li ><a href="types/TiempoCompartido.htm"   onmouseover="setNewImage2()" onmouseout="setOldImage()">Types</a></li>
+                    <li ><a href="os/Sistemas Operativos.htm"   onmouseover="setNewImage3()" onmouseout="setOldImage()">Operating Sistems</a></li>
+                    <li ><a href="navbar/navbar.html"           onmouseover="setNewImage4()" onmouseout="setOldImage()">Navbar</a></li>
+                    <li ><a href="proof/proof.html"             onmouseover="setNewImage5()" onmouseout="setOldImage()">Proof</a></li>
                 </ul>
             </section>
             
         </div>
+
+
+        <script src="works_script.js"></script>
+         <script src="https://kit.fontawesome.com/d51307fecc.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
