@@ -1,0 +1,297 @@
+@mixin comida {
+    position: relative;
+    display: block;
+    height: 100%;
+    border: 2px white solid;
+    box-sizing: border-box;
+    h1{
+        color: white;
+        text-align: center;
+        margin: 30px 0 30px 0;
+        position: relative;
+    }
+}
+
+@mixin oscuro {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+
+@mixin  comidaMenuPrecio{
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    ul{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        list-style: none;
+        li{
+            margin: 5px 0 5px 0;
+        }
+    }
+
+}
+
+@mixin fondo{
+    background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.contenido{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    .titulo{
+        background-image: url(https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px white solid;
+        width: 80%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        h1{
+            position: relative;
+            color: white;
+            text-transform: uppercase;
+            font-size: 150px;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            
+        }
+        h2{
+            position: relative;
+            color: black;
+            text-shadow: 1px 1px rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: 50px;
+            text-align: center;
+            top: 30%;
+            -ms-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+    .comidas{
+        border: 2px white solid;
+        width: 80%;
+        height: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        div{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            background-color: rgb(39, 39, 39);
+            .entrada{
+                @include comida;
+                background-image: url(https://images.unsplash.com/photo-1544681280-d25a782adc9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+                @include fondo;
+                &:before {
+                    @include oscuro();
+                }
+                .entradaContenedor{
+                    display: flex;
+                    width: 100%;
+                    background-color: transparent;
+                    .entradaMenu{
+                        @include comidaMenuPrecio();
+                    }
+                    .entradaPrecio{
+                       @include comidaMenuPrecio();
+                    }
+                }
+            }
+            .principal{
+                @include comida;
+                background-image: url(https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+                @include fondo();
+                &:before {
+                    @include oscuro();
+                }
+                .principalContenedor{
+                    display: flex;
+                    width: 100%;
+                    background-color: transparent;
+                    .principalMenu{
+                        @include comidaMenuPrecio();
+                    }
+                    .principalPrecio{
+                       @include comidaMenuPrecio();
+                    }
+                }
+            }
+            .refrscos{
+                @include comida;
+                background-image: url(https://images.unsplash.com/photo-1557420286-bacad24b4d51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+                @include fondo;
+                &:before {
+                    @include oscuro();
+                }
+                .refrscosContenedor{
+                    display: flex;
+                    width: 100%;
+                    background-color: transparent;
+                    .refrscosMenu{
+                        @include comidaMenuPrecio();
+                    }
+                    .refrscosPrecio{
+                       @include comidaMenuPrecio();
+                    }
+                }
+            }
+            .postres{
+                @include comida;
+                background-image: url(https://images.unsplash.com/photo-1553990810-0af264b1defb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+                @include fondo();
+                &:before {
+                    @include oscuro();
+                }
+                .postresContenedor{
+                    display: flex;
+                    width: 100%;
+                    background-color: transparent;
+                    .postresMenu{
+                        @include comidaMenuPrecio();
+                    }
+                   .postresPrecio{
+                        @include comidaMenuPrecio();
+                   }
+                } 
+            }
+        }
+    }
+    .footer{
+        position: relative;
+        width: 80%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border: 2px white solid;
+        background-image: url(https://images.unsplash.com/photo-1584531482079-af3f1a796744?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+        @include fondo();
+        &::before{
+            @include oscuro();
+        }
+        div{
+            position: relative;
+            width: 190px;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            ul{
+                position: relative;
+                display: flex;
+                list-style: none;
+                margin: auto;
+                li{
+                    margin: 10px;
+                    font-size: 25px;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        &:hover{
+                            color: rgba(255,255,255,.5);
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 500px) {
+    .contenido{
+        .titulo{
+            height: 300px;
+            h1{
+                font-size: 70px;
+            }
+            h2{
+                font-size: 20px;
+                top: 40%;
+            }
+        }
+        .comidas{
+            .entrada{
+                .entradaMenu{
+                    margin-left: 10px;
+                    font-size: 12px;
+                }
+                .entradaPrecio{
+                    font-size: 12px; 
+                } 
+            }
+            .principal{
+                .principalMenu{
+                    margin-left: 10px;
+                    font-size: 12px;
+                }
+                .principalPrecio{
+                    font-size: 12px;
+                }
+            }
+            .refrscos{
+                .refrscosMenu{
+                    margin-left: 10px;
+                    font-size: 10px;
+                }
+                .refrscosPrecio{
+                    font-size: 10px;
+                }
+            }
+            .postres{
+                .postresMenu{
+                    margin-left: 10px;
+                    font-size: 10px;
+                }
+                .postresPrecio{
+                    font-size: 10px;
+                }
+            }
+        }
+        .footer{
+            height: 100px;
+            div{
+                width: 150px;
+                ul{
+                    li{
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

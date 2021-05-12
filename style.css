@@ -131,6 +131,11 @@ header.sticky{
     cursor: pointer;
 }
 
+.home-div section a img{
+    width: 150px;
+    height: 150px;
+}
+
 
 
 .checkbtn{

@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.contenido {
+  background-color: black;
+  height: auto;
+  width: 100%;
+}
+
+.contenido .titulo {
+  background-image: url(https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px white solid;
+  width: 80%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.contenido .titulo h1 {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-size: 150px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contenido .titulo h2 {
+  position: relative;
+  color: black;
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 50px;
+  text-align: center;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.contenido .comidas {
+  border: 2px white solid;
+  width: 80%;
+  height: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.contenido .comidas div {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #272727;
+}
+
+.contenido .comidas div .entrada {
+  position: relative;
+  display: block;
+  height: 100%;
+  border: 2px white solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(https://images.unsplash.com/photo-1544681280-d25a782adc9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido .comidas div .entrada h1 {
+  color: white;
+  text-align: center;
+  margin: 30px 0 30px 0;
+  position: relative;
+}
+
+.contenido .comidas div .entrada:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido .comidas div .entrada .entradaContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .entrada .entradaContenedor .entradaMenu {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .entrada .entradaContenedor .entradaMenu ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .entrada .entradaContenedor .entradaMenu ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .entrada .entradaContenedor .entradaPrecio {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .entrada .entradaContenedor .entradaPrecio ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .entrada .entradaContenedor .entradaPrecio ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .principal {
+  position: relative;
+  display: block;
+  height: 100%;
+  border: 2px white solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido .comidas div .principal h1 {
+  color: white;
+  text-align: center;
+  margin: 30px 0 30px 0;
+  position: relative;
+}
+
+.contenido .comidas div .principal:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido .comidas div .principal .principalContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .principal .principalContenedor .principalMenu {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .principal .principalContenedor .principalMenu ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .principal .principalContenedor .principalMenu ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .principal .principalContenedor .principalPrecio {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .principal .principalContenedor .principalPrecio ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .principal .principalContenedor .principalPrecio ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .refrscos {
+  position: relative;
+  display: block;
+  height: 100%;
+  border: 2px white solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(https://images.unsplash.com/photo-1557420286-bacad24b4d51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido .comidas div .refrscos h1 {
+  color: white;
+  text-align: center;
+  margin: 30px 0 30px 0;
+  position: relative;
+}
+
+.contenido .comidas div .refrscos:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor .refrscosMenu {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor .refrscosMenu ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor .refrscosMenu ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor .refrscosPrecio {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor .refrscosPrecio ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .refrscos .refrscosContenedor .refrscosPrecio ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .postres {
+  position: relative;
+  display: block;
+  height: 100%;
+  border: 2px white solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(https://images.unsplash.com/photo-1553990810-0af264b1defb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido .comidas div .postres h1 {
+  color: white;
+  text-align: center;
+  margin: 30px 0 30px 0;
+  position: relative;
+}
+
+.contenido .comidas div .postres:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido .comidas div .postres .postresContenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .postres .postresContenedor .postresMenu {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .postres .postresContenedor .postresMenu ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .postres .postresContenedor .postresMenu ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .comidas div .postres .postresContenedor .postresPrecio {
+  color: white;
+  width: 100%;
+  background-color: transparent;
+}
+
+.contenido .comidas div .postres .postresContenedor .postresPrecio ul {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+}
+
+.contenido .comidas div .postres .postresContenedor .postresPrecio ul li {
+  margin: 5px 0 5px 0;
+}
+
+.contenido .footer {
+  position: relative;
+  width: 80%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 2px white solid;
+  background-image: url(https://images.unsplash.com/photo-1584531482079-af3f1a796744?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contenido .footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contenido .footer div {
+  position: relative;
+  width: 190px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.contenido .footer div ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: auto;
+}
+
+.contenido .footer div ul li {
+  margin: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.contenido .footer div ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.contenido .footer div ul li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 500px) {
+  .contenido .titulo {
+    height: 300px;
+  }
+  .contenido .titulo h1 {
+    font-size: 70px;
+  }
+  .contenido .titulo h2 {
+    font-size: 20px;
+    top: 40%;
+  }
+  .contenido .comidas .entrada .entradaMenu {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .contenido .comidas .entrada .entradaPrecio {
+    font-size: 12px;
+  }
+  .contenido .comidas .principal .principalMenu {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .contenido .comidas .principal .principalPrecio {
+    font-size: 12px;
+  }
+  .contenido .comidas .refrscos .refrscosMenu {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .contenido .comidas .refrscos .refrscosPrecio {
+    font-size: 10px;
+  }
+  .contenido .comidas .postres .postresMenu {
+    margin-left: 10px;
+    font-size: 10px;
+  }
+  .contenido .comidas .postres .postresPrecio {
+    font-size: 10px;
+  }
+  .contenido .footer {
+    height: 100px;
+  }
+  .contenido .footer div {
+    width: 150px;
+  }
+  .contenido .footer div ul li a {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
