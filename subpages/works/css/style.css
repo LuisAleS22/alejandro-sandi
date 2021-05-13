@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  z-index: 100000;
+  background: white;
+  border-bottom: gray;
+  -webkit-box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-weight: 12;
+  letter-spacing: 2px;
+  font-size: 20px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding-top: 10px;
+}
+
+@media (min-width: 3100px) {
+  .navbar .logo {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .navbar .logo {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 300px) {
+  .navbar .logo {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .navbar .logo {
+    font-size: 40px;
+  }
+}
+
+.navbar .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+.navbar .navLinks li {
+  padding: 12px 12px;
+}
+
+@media (min-width: 3100px) {
+  .navbar .navLinks li {
+    font-size: 40px;
+    padding: 25px 25px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .navbar .navLinks li {
+    font-size: 20px;
+    padding: 15px 15px;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 300px) {
+  .navbar .navLinks li {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 300px) {
+  .navbar .navLinks li {
+    font-size: 40px;
+  }
+}
+
+.navbar .navLinks li:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar .navLinks li a {
+  color: black;
+  text-decoration: none;
+}
+
+.contents {
+  position: relative;
+  top: 65px;
+  width: 80%;
+  height: calc(100vh - 65px);
+  margin: 0 auto;
+}
+
+@media (min-width: 3100px) {
+  .contents {
+    top: 108px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents {
+    top: 75px;
+    height: calc(100vh - 75px);
+  }
+}
+
+.contents .preview {
+  position: relative;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contents .preview h1 {
+  font-size: 20px;
+  font-family: 'Alegreya Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 3100px) {
+  .contents .preview h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents .preview h1 {
+    font-size: 40px;
+  }
+}
+
+.contents .preview h2 {
+  font-size: 18px;
+  font-family: 'Alegreya Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 3100px) {
+  .contents .preview h2 {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents .preview h2 {
+    font-size: 40px;
+  }
+}
+
+.contents .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 3100px) {
+  .contents .image {
+    margin: 30px 0 50px 0;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents .image {
+    margin: 30px 0 50px 0;
+  }
+}
+
+.contents .image .img {
+  position: relative;
+  width: 560px;
+  height: 315px;
+  border: 1px solid black;
+  border-radius: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden;
+}
+
+@media (min-width: 3100px) {
+  .contents .image .img {
+    width: 711px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents .image .img {
+    width: 711px;
+    height: 400px;
+  }
+}
+
+.contents .image .img #img {
+  vertical-align: middle;
+  height: 95%;
+  width: 90%;
+}
+
+.contents .links {
+  width: 100%;
+}
+
+.contents .links ul {
+  list-style: none;
+}
+
+.contents .links ul li {
+  margin: 6px 0 6px 0;
+}
+
+.contents .links ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.contents .links ul li a h1 {
+  font-family: 'Alegreya Sans';
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: black;
+  margin-right: 5px;
+}
+
+@media (min-width: 3100px) {
+  .contents .links ul li a h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents .links ul li a h1 {
+    font-size: 28px;
+  }
+}
+
+.contents .links ul li a h1:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.contents .links ul li a p {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+@media (min-width: 3100px) {
+  .contents .links ul li a p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 3000px) and (min-width: 1920px) {
+  .contents .links ul li a p {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

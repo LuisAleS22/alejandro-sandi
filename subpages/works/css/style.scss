@@ -1,0 +1,246 @@
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100000;
+    background: white;
+    border-bottom: gray;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+    @media (min-width: 3100px){
+    }
+    @media (max-width: 3000px) and (min-width: 1920px){
+    }
+    @media (max-width: 900px) and (min-width: 300px){
+    }
+    @media (max-width: 300px){
+    }
+    .logo{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        font-weight: 12;
+        letter-spacing: 2px;
+        font-size: 20px;
+        transition: 0.6s;
+        padding-top: 10px;
+        @media (min-width: 3100px){
+            font-size: 80px;
+        }
+        @media (max-width: 3000px) and (min-width: 1920px){
+            font-size: 40px;
+        }
+        @media (max-width: 900px) and (min-width: 300px){
+            font-size: 40px;
+        }
+        @media (max-width: 300px){
+            font-size: 40px;
+        }
+    }
+    .navLinks{
+        display: flex;
+        text-align: center;
+        list-style: none;
+        li{
+            padding: 12px 12px;
+            @media (min-width: 3100px){
+                font-size: 40px;
+                padding: 25px 25px;
+            }
+            @media (max-width: 3000px) and (min-width: 1920px){
+                font-size: 20px;
+                padding: 15px 15px;
+            }
+            @media (max-width: 900px) and (min-width: 300px){
+                font-size: 40px;
+            }
+            @media (max-width: 300px){
+                font-size: 40px;
+            }
+            &:hover{
+                background: rgba(0, 0, 0, 0.2);
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.contents{
+    position: relative;
+    top: 65px;
+    width: 80%;
+    height: calc(100vh - 65px);
+    margin: 0 auto;
+    @media (min-width: 3100px){
+        top: 108px;
+    }
+    @media (max-width: 3000px) and (min-width: 1920px){
+        top: 75px;
+        height: calc(100vh - 75px);
+    }
+    @media (max-width: 900px) and (min-width: 300px){
+    }
+    @media (max-width: 300px){
+    }
+    .preview{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        h1{
+            font-size: 20px;
+            font-family: 'Alegreya Sans';
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            @media (min-width: 3100px){
+                font-size: 60px;
+            }
+            @media (max-width: 3000px) and (min-width: 1920px){
+                font-size: 40px;
+            }
+            @media (max-width: 900px) and (min-width: 300px){
+            }
+            @media (max-width: 300px){
+            }
+        }
+        h2{
+            font-size: 18px;
+            font-family: 'Alegreya Sans';
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            @media (min-width: 3100px){
+                font-size: 58px;
+            }
+            @media (max-width: 3000px) and (min-width: 1920px){
+                font-size: 40px;
+            }
+            @media (max-width: 900px) and (min-width: 300px){
+            }
+            @media (max-width: 300px){
+            }
+        }
+    }
+    .image{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0 0 20px 0;
+        @media (min-width: 3100px){
+            margin: 30px 0 50px 0;
+        }
+        @media (max-width: 3000px) and (min-width: 1920px){
+            margin: 30px 0 50px 0;
+        }
+        @media (max-width: 900px) and (min-width: 300px){
+        }
+        @media (max-width: 300px){
+        }
+        .img{
+            position: relative;
+            width: 560px;
+            height: 315px;
+            border: 1px solid black;
+            border-radius: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 50%;
+            transform: translateX(-50%);
+            overflow: hidden;
+            @media (min-width: 3100px){
+                width: 711px;
+                height: 400px;
+            }
+            @media (max-width: 3000px) and (min-width: 1920px){
+                width: 711px;
+                height: 400px;
+            }
+            @media (max-width: 900px) and (min-width: 300px){
+            }
+            @media (max-width: 300px){
+            }
+            #img{
+                vertical-align: middle;
+                height: 95%;
+                width: 90%;
+            }
+        }
+    }
+    .links{
+        width: 100%;
+        ul{
+            list-style: none;
+            li{
+                margin: 6px 0 6px 0;
+                a{
+                    display: flex;
+                    text-decoration: none;
+                    color: black;
+                    h1{
+                        font-family: 'Alegreya Sans';
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        color: black;
+                        margin-right: 5px;
+                        @media (min-width: 3100px){
+                            font-size: 28px;
+                        }
+                        @media (max-width: 3000px) and (min-width: 1920px){
+                            font-size: 28px;
+                        }
+                        @media (max-width: 900px) and (min-width: 300px){
+                        }
+                        @media (max-width: 300px){
+                        }
+                        &:hover{
+                            color:rgba(0, 0, 0, 0.7);
+                        }
+                    }
+
+                    p{
+                        font-size: 15px;
+                        font-weight: normal;
+                        @media (min-width: 3100px){
+                            font-size: 20px;
+                        }
+                        @media (max-width: 3000px) and (min-width: 1920px){
+                            font-size: 20px;
+                        }
+                        @media (max-width: 900px) and (min-width: 300px){
+                        }
+                        @media (max-width: 300px){
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

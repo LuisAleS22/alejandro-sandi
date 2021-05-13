@@ -4,59 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandro Sandí</title>
-    <link rel="stylesheet" href="works_style.css">
+    <title>Alejandro Sandí - Works</title>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <header>
+    <div class="navbar">
         <a href="../../index.html" class="logo">Web Site</a>
         <ul class="navLinks">
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-    
-            
+            <li><a href="subpages/works/works.html">Works</a></li>
+            <li><a href="subpages/contact/contact.html">Contact</a></li>
         </ul>
-    
-    
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-    
-    </header>
-    
-        <div class="second-body">
-
-            <section class="estructura first">
-               <h1>Practical work done in classes</h1>
-               <div>
-                <h2>Preview</h2>
-                <div id="preview">
-                    <img src="../../assets/Preview/base.png" id="img">
-                 </div>
-               </div>
-               
-            </section>
-
-            <section class="estructura second">
-                <ul>
-                    <li ><a href="songs/songs.html"             onmouseover="setNewImage1()" onmouseout="setOldImage()">Songs</a></li>
-                    <li ><a href="types/TiempoCompartido.htm"   onmouseover="setNewImage2()" onmouseout="setOldImage()">Types</a></li>
-                    <li ><a href="os/Sistemas Operativos.htm"   onmouseover="setNewImage3()" onmouseout="setOldImage()">Operating Sistems</a></li>
-                    <li ><a href="navbar/navbar.html"           onmouseover="setNewImage4()" onmouseout="setOldImage()">Navbar</a></li>
-                    <li ><a href="proof/proof.html"             onmouseover="setNewImage5()" onmouseout="setOldImage()">Proof</a></li>
-                </ul>
-            </section>
-            
+    </div>
+    <section class="contents">
+        <div class="preview">
+            <h1>Practical work done in classes</h1>
+            <h2>Preview</h2>
         </div>
+        <div class="image">
+            <div class="img">
+                <img src="../../assets/Preview/base.png" id="img">
+            </div>
+        </div>
+        <div class="links">
+            <ul>
+                <li ><a href="songs/songs.html"             onmouseover="setNewImage1()" onmouseout="setOldImage()"> <h1>Songs</h1><p> This is a practice where youtube song links were introduced.</p></a></li>
+                <li ><a href="types/TiempoCompartido.htm"   onmouseover="setNewImage2()" onmouseout="setOldImage()"><h1>Types</h1><p> In this practice, an investigation of the different types of operating systems was carried out, I was assigned the shared system operating system.</p></a></li>
+                <li ><a href="os/Sistemas Operativos.htm"   onmouseover="setNewImage3()" onmouseout="setOldImage()"><h1>Operating Sistems</h1><p> Another practice of types of operating systems, but this time in a more general way, where each one made a scheme.</p></a></li>
+                <li ><a href="navbar/navbar.html"           onmouseover="setNewImage4()" onmouseout="setOldImage()"><h1>NavBar</h1><p> In the practice of the navigation bar, a small structure of a navigation bar was made and also the video of a song from YouTube is added.</p></a></li>
+                <li ><a href="proof/proof.html"             onmouseover="setNewImage5()" onmouseout="setOldImage()"><h1>Proof</h1><p> First practice done with html for introduction, in which only two small texts and an image were added.</p></a></li>
+            </ul>
+        </div>
+        
+    </section>
 
 
-        <script src="works_script.js"></script>
-         <script src="https://kit.fontawesome.com/d51307fecc.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <script src="../../scripts/fontAwesome_pro.js"></script>
 </body>
 </html>
 

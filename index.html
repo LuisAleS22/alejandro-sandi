@@ -4,61 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <title>Alejandro Sandí</title>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
-    <script src="https://kit.fontawesome.com/9ce17c34aa.js" crossorigin="anonymous"></script>
-
+    <title>Alejandro Sandí - Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
+    <div class="ground"></div>
+    <div class="navbar">
         <a href="#" class="logo">Web Site</a>
         <ul class="navLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="subpages/menu/index.html">Menu</a></li>
             <li><a href="subpages/works/works.html">Works</a></li>
             <li><a href="subpages/contact/contact.html">Contact</a></li>
-
-            
         </ul>
-
-
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-
-    </header>
-
-
-    <div class="banner"></div>
-
-    <div class="vacio"></div>
-    <div class="second-body">
+    </div>
+    <section class="contents">
         <section class="home">
             <h2>home</h2>
             <p>Learning website at the Regional Professional Technical College of San Carlos of the student of computer science in networks Alejandro Sandí in the matter of operating systems for the course of the year 2021</p>
             <div class="home-div">
-                <section title="Edited template">
-                    <a href="subpages/works/alejandro/index.html">
-                        <img src="assets/web-site-icon.png" alt="web-site">
+                <section class="website" title="Edited template">
+                    <a href="subpages/works/template/index.html">
+                        <img src="assets/logo.png" alt="web-site">
                     </a>
-                </section>
+                </section class="menu">
                 <section title="Menu (II Summative Strategy)">
-                    <a href="subpages/menu/index.html">
-                        <img src="assets/folder-icon.png" alt="works">
+                    <a href="subpages/works/menu/index.html">
+                        <img src="assets/menu-icon.png" alt="works">
                     </a>
                 </section>
             </div>
         </section>
-        <section class="home">
+        <section class="new">
             <h2>new</h2>
             <div class="lists">
                 <ul>
-                    <li>The <a href="subpages/menu/index.html" class="links">menu</a> option is added on May 7th as a second summative evaluation strategy</li>
-                    <li>Edition of the <a href="subpages/works/alejandro/index.html" class="links">template</a> given by the teacher  for its edition made on Friday, April 16, 2021</li>
+                    <li>The <a href="subpages/works/menu/index.html" class="links">menu</a> option is added on May 7th as a second summative evaluation strategy</li>
+                    <li>Edition of the <a href="subpages/works/template/index.html" class="links">template</a> given by the teacher  for its edition made on Friday, April 16, 2021</li>
                     <li>Navigation bar <a href="subpages/works/navbar/navbar.html" class="links">"navbar"</a> practice added April 15, 2021</li>
                     <li>The <a href="subpages/works/os/Sistemas Operativos.htm" class="links">operating systems</a> page of guide #2 is added on April 15, 2021</li>
                     <li>Inclusion of the <a href="subpages/works/songs/songs.html" class="links">songs</a> and <a href="subpages/works/types/TiempoCompartido.htm" class="links">types</a> pages in the works section on April 10, 2021</li>
@@ -66,15 +47,19 @@
                 </ul>
             </div>
         </section>
-    </div>
+    </section>
+    <section class="footer">
+        <div class="footer_container">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fal fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </section>
 
-    <footer>
-        <ul  id="lista">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/fontAwesome_pro.js"></script>
 </body>
 </html>
